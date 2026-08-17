@@ -8,23 +8,6 @@ no data collection. Everything runs in the visitor's browser.
 
 ---
 
-## Put it online (free, ~3 minutes)
-
-1. Create a new repository on GitHub — call it whatever you like (e.g. `companion-quiz`).
-2. Upload `index.html`, `README.md` and `.nojekyll` to the root of the repo.
-3. Go to **Settings → Pages**.
-4. Under "Build and deployment", set **Source: Deploy from a branch**, **Branch: `main`**,
-   **Folder: `/ (root)`**. Save.
-5. Wait about a minute. Your quiz is live at
-   `https://<your-username>.github.io/<repo-name>/`
-
-To use a custom domain (e.g. `quiz.yoursite.org`), add it under Settings → Pages → Custom domain
-and create a CNAME record with your DNS provider.
-
-> `.nojekyll` tells GitHub Pages to serve the files as-is. Harmless, but keep it.
-
----
-
 ## What it measures
 
 The quiz deliberately ignores **what app you use** and scores **what you do with it**, which is
