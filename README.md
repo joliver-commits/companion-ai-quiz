@@ -1,10 +1,38 @@
 # How Well Do You Know Your AI? ★ The Companion Quiz
 
-A Y2K-magazine-style friendship quiz that places a young person's **actual AI usage** on the
-Companion Index — and hands them a copy-paste prosocial upgrade for their chatbot.
+A modern character-quiz that places a young person's **actual AI usage** on the Companion Index —
+and hands them a copy-paste prosocial upgrade for their chatbot.
 
 It is one self-contained `index.html`. No build step, no dependencies, no server, no analytics,
 no data collection. Everything runs in the visitor's browser.
+
+## Design
+
+Editorial quiz layout in the BuzzFeed / *Girls' Life* mould: white ground, chunky display type
+(**Archivo Black** over **Plus Jakarta Sans**), and a picture-tile answer grid where a big emoji
+stands in for the photo. Y2K shows up as pastel tile tints and a pink→violet gradient rather than as
+maximalist chrome. Result pages open with a full-bleed colour hero keyed to the status you got.
+
+Fonts load from Google Fonts with system fallbacks, so it degrades cleanly on networks that block
+them (school wifi). If you'd rather not depend on Google, delete the two `<link rel="preconnect">`
+tags and the stylesheet link — the fallback stack still reads well.
+
+---
+
+## Put it online (free, ~3 minutes)
+
+1. Create a new repository on GitHub — call it whatever you like (e.g. `companion-quiz`).
+2. Upload `index.html`, `README.md` and `.nojekyll` to the root of the repo.
+3. Go to **Settings → Pages**.
+4. Under "Build and deployment", set **Source: Deploy from a branch**, **Branch: `main`**,
+   **Folder: `/ (root)`**. Save.
+5. Wait about a minute. Your quiz is live at
+   `https://<your-username>.github.io/<repo-name>/`
+
+To use a custom domain (e.g. `quiz.yoursite.org`), add it under Settings → Pages → Custom domain
+and create a CNAME record with your DNS provider.
+
+> `.nojekyll` tells GitHub Pages to serve the files as-is. Harmless, but keep it.
 
 ---
 
